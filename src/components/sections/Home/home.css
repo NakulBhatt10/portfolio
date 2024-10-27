@@ -1,117 +1,85 @@
 /* Home.css */
 .home-section {
     display: flex;
-    flex-direction: column;
-    /* Stacks content vertically */
-    justify-content: center;
-    /* Centers content vertically */
-    align-items: center;
-    /* Centers content horizontally */
-    height: 100vh;
-    /* Full-screen height */
+    flex-direction: column; /* Stacks content vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    height: 100vh; /* Full-screen height */
     padding: 50px;
-    position: relative;
-    /* For background layers */
-    overflow: hidden;
-    /* Hide overflow from animated elements */
-
+    position: relative; /* For background layers */
+    overflow: hidden; /* Hide overflow from animated elements */
+  
     /* Dark background with more prominent grid lines */
-    background-color: #0b0b0b;
-    /* Darker background */
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px),
-        /* More visible white grid lines (30% opacity) */
-        linear-gradient(90deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
-    /* Vertical and horizontal grid lines */
-    background-size: 150px 150px;
-    /* Grid size */
+    background-color: #0b0b0b; /* Darker background */
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), /* More visible white grid lines (30% opacity) */
+      linear-gradient(90deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px); /* Vertical and horizontal grid lines */
+    background-size: 150px 150px; /* Grid size */
     background-position: center;
-}
-
-/* Content block centered both horizontally and vertically */
-.home-content {
+  }
+  
+  /* Content block centered both horizontally and vertically */
+  .home-content {
     display: flex;
-    flex-direction: column;
-    /* Stack text and image vertically */
+    flex-direction: column; /* Stack text and image vertically */
     justify-content: center;
     align-items: center;
-    text-align: center;
-    /* Center the text */
-    color: #ffffff;
-    /* Text is white to contrast the dark background */
-    z-index: 2;
-    /* Ensure content is above background effects */
-}
-
-.home-greeting {
+    text-align: center; /* Center the text */
+    color: #ffffff; /* Text is white to contrast the dark background */
+    z-index: 2; /* Ensure content is above background effects */
+  }
+  
+  .home-greeting {
     font-size: 20px;
     margin-bottom: 10px;
-}
-
-.home-title {
+  }
+  
+  .home-title {
     font-size: 48px;
     font-weight: bold;
-}
-
-.highlight {
-    color: #6d28d9;
-    /* Purple color to stand out against the dark background */
+  }
+  
+  .highlight {
+    color: #6d28d9; /* Purple color to stand out against the dark background */
     text-decoration: underline;
-}
-
-.home-image img {
+  }
+  
+  .home-image img {
     width: 400px;
     border-radius: 20%;
-    margin-top: -5px;
-    /* Reduced margin to bring image closer to the text */
-    z-index: 2;
-    /* Keep the image above background animations */
-}
-
-.hire-me {
+    margin-top: -5px; /* Reduced margin to bring image closer to the text */
+    z-index: 2; /* Keep the image above background animations */
+  }
+  
+  .hire-me {
     margin-top: 20px;
-    background-color: #6c28d900;
-    /* Transparent purple background for button */
+    background-color: #6c28d900; /* Transparent purple background for button */
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 50%;
     text-align: center;
-    z-index: 2;
-    /* Keep button above background effects */
-}
-
-.hire-me a {
+    z-index: 2; /* Keep button above background effects */
+  }
+  
+  .hire-me a {
     color: #ffffff;
     text-decoration: none;
-}
-
-/* Complex background animations */
-@keyframes floatingEffect {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes rotateGrid {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Animated glowing orbs floating in the background */
-.home-section::before {
+  }
+  
+  /* Complex background animations */
+  @keyframes floatingEffect {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+  
+  @keyframes rotateGrid {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Animated glowing orbs floating in the background */
+  .home-section::before {
     content: '';
     position: absolute;
     top: 20%;
@@ -122,35 +90,33 @@
     border-radius: 50%;
     filter: blur(150px);
     animation: floatingEffect 10s infinite ease-in-out;
-}
-
-.home-section::after {
+  }
+  
+  .home-section::after {
     content: '';
     position: absolute;
     bottom: 20%;
     right: 30%;
     width: 400px;
     height: 400px;
-    background: rgba(255, 105, 180, 0.2);
-    /* Hot pink hue for variety */
+    background: rgba(255, 105, 180, 0.2); /* Hot pink hue for variety */
     border-radius: 50%;
     filter: blur(150px);
     animation: floatingEffect 8s infinite ease-in-out reverse;
-}
-
-/* Optional animated grid (rotating background grid) */
-.grid-animation {
+  }
+  
+  /* Optional animated grid (rotating background grid) */
+  .grid-animation {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), 
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
     background-size: 150px 150px;
-    animation: rotateGrid 60s linear infinite;
-    /* Slowly rotating grid */
-    z-index: 1;
-    /* Behind other content */
-}
+    animation: rotateGrid 60s linear infinite; /* Slowly rotating grid */
+    z-index: 1; /* Behind other content */
+  }
+  

@@ -1,0 +1,141 @@
+.education-section-container {
+    background-color: #3d1e6d;
+    color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .section-title .highlight {
+    color: #a0da5e;
+  }
+  
+  .view-all-button {
+    background-color: #a0da5e;
+    color: #3d1e6d;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 40px;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    gap: 20px;
+    background-color: #4b2b8f;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 40px; /* Adds space between sections */
+  }
+  
+  .image-container {
+    flex: 1;
+  }
+  
+  .education-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .details-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .pill-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .pill {
+    background-color: #a0da5e;
+    color: #3d1e6d;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: bold;
+  }
+  
+  .education-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .education-description {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+  }
+  
+  .subjects-list {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 0;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+  }
+  
+  .subjects-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .subjects-list li::before {
+    content: "✔️"; /* Unicode character for checkmark */
+    color: #a0da5e; /* Green color for the checkmark */
+    font-size: 1.2rem;
+  }
+  
+  
+  .view-details-button {
+    background-color: #a0da5e;
+    color: #3d1e6d;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .details-container {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .image-container,
+    .details-container {
+      width: 100%;
+    }
+  }
+  
