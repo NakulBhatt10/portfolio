@@ -19,8 +19,8 @@ const About = () => {
             <div className="about-content">
                 <div className="about-text">
                     <p>
-                        Throughout my college years, I’ve honed my skills in <strong>JavaScript</strong> and <strong>Typescript</strong>.
-                        I've experimented with <strong>Java</strong>, <strong>SQL</strong>, and developed an appetite for learning <strong>C++</strong>,
+                        Throughout this years, I’ve honed my skills in <strong>JavaScript</strong> and <strong>Python</strong>.
+                        I've experimented with <strong>JavaScript</strong>, <strong>Python</strong>, and developed an appetite for learning <strong>React</strong>,
                         <strong>C#</strong>, and <strong>Python</strong>.
                     </p>
                     <p>
@@ -30,7 +30,7 @@ const About = () => {
                     <p>
                         I'm eager to apply my skills and creativity to make meaningful impacts in the real world.
                     </p>
-                    <p>Here are technologies I am familiar with:</p>
+                    <p>Here are things I would love to work with:</p>
 
                     <ul className="tech-list">
                         {aboutData.map(({ id, title, icon }) => (
@@ -41,13 +41,7 @@ const About = () => {
                     </ul>
                 </div>
 
-                <div className="about-image">
-                    <img
-                        src="path_to_your_image.jpg" // Replace with actual image path
-                        alt="Profile"
-                        className="profile-image"
-                    />
-                </div>
+
             </div>
         </section>
     );

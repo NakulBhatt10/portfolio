@@ -24,7 +24,7 @@ function Navbar() {
         <div className="navbar">
             <div className="container">
                 <div className="logo">
-                    <h1>Nakul</h1>
+
                 </div>
                 <div className="nav-links">
                     <ul className="nav-list">

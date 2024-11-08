@@ -33,7 +33,7 @@ const Home = () => {
         <img src={myPhoto} alt="Nakul" /> {/* Using your photo */}
       </div>
       <div className="hire-me">
-        <a href="#contact">HIRE ME</a>
+        <a href="#contact">CONTACT ME</a>
       </div>
     </section>
   );
