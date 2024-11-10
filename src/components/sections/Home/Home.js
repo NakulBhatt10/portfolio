@@ -23,10 +23,10 @@ const Home = () => {
   return (
     <section className="home-section">
       <div className="home-content">
-        <p className="home-greeting">Hello</p>
+        <p className="home-greeting"><h1>Hello</h1></p>
         <h1 className="home-title">
           I’m <span className="highlight">Nakul</span> <br />
-          <span id="typed-text"></span> Developer
+          <span id="typed-text"></span>Developer
         </h1>
       </div>
       <div className="home-image">

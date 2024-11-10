@@ -9,7 +9,7 @@ const Certificate = () => {
   return (
     <div className="certificate-section-container">
       <h2 className="section-title">
-        <span className="highlight">My</span> Certificates
+        <span className="highlight">Certificates</span>
       </h2>
 
       <div className="certificate-cards">
@@ -41,7 +41,7 @@ const Certificate = () => {
           <div className="certificate-icon">
             <img src={webDesignIcon} alt="Interactivity with JavaScript" />
           </div>
-          <h3 className="certificate-title">Web Design</h3>
+          <h3 className="certificate-title"> Interactivity with JavaScript</h3>
           <p className="certificate-description">
             Mastered DOM manipulation, event handling, and user interactions with JavaScript.
           </p>
