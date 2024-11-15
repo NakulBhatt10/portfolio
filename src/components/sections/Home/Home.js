@@ -75,19 +75,19 @@ const Home = () => {
           CONNECT WITH ME
         </a>
         <div className="icons-container">
-          <a href="https://linkedin.com" target="_blank">
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer noopener">
             <img src={linkedin} className="app-icon" alt="LinkedIn" />
           </a>
-          <a href="https://instagram.com" target="_blank">
+          <a href="https://instagram.com" target="_blank" rel="noreferrer noopener">
             <img src={insta} className="app-icon" alt="Instagram" />
           </a>
-          <a href="https://github.com" target="_blank">
+          <a href="https://github.com" target="_blank" rel="noreferrer noopener">
             <img src={github} className="app-icon" alt="GitHub" />
           </a>
-          <a href="https://leetcode.com" target="_blank">
+          <a href="https://leetcode.com" target="_blank" rel="noreferrer noopener">
             <img src={leetcode} className="app-icon" alt="LeetCode" />
           </a>
-          <a href="mailto:your-email@example.com" target="_blank">
+          <a href="mailto:your-email@example.com" target="_blank" rel="noreferrer noopener">
             <img src={gmail} className="app-icon" alt="Email" />
           </a>
         </div>
