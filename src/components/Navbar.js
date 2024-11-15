@@ -29,10 +29,11 @@ function Navbar() {
                 <div className="nav-links">
                     <ul className="nav-list">
                         <a href="#home" onClick={handleScroll} className="nav-link">Home</a>
+
+                        <a href="#education" onClick={handleScroll} className="nav-link">Education</a>
+                        <a href="#certificate" onClick={handleScroll} className="nav-link">Acheivements</a>
+                        <a href="#skills" onClick={handleScroll} className="nav-link">Skills</a>
                         <a href="#about" onClick={handleScroll} className="nav-link">About</a>
-                        <a href="#resume" onClick={handleScroll} className="nav-link">Resume</a>
-                        <a href="#projects" onClick={handleScroll} className="nav-link">Projects</a>
-                        <a href="#contact" onClick={handleScroll} className="nav-link">Contact</a>
                         <a href="/assets/resume/julia_resume.pdf" target="_blank" className="resume-btn">Resume</a>
                     </ul>
                 </div>

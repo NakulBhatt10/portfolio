@@ -7,7 +7,7 @@ import webDesignIcon from './two.png'; // Placeholder for Web Design icon
 
 const Certificate = () => {
   return (
-    <div className="certificate-section-container">
+    <div id="certificate" className="certificate-section-container"> {/* Added id="certificate" */}
       <h2 className="section-title">
         <span className="highlight">Certificates</span>
       </h2>

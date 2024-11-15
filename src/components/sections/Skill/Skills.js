@@ -21,7 +21,7 @@ const skills = [
 
 const Skills = () => {
     return (
-        <div className="skills">
+        <section id="skills" className="skills">
             <h2 className="skills-title">My Skills</h2>
             <div className="skills-container">
                 {skills.map((skill, index) => (
@@ -31,7 +31,7 @@ const Skills = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

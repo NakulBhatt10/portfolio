@@ -5,9 +5,9 @@ import mithibai from './mithibai.jpg'; // Image for College
 
 const Education = () => {
   return (
-    <div className="education-section-container">
+    <div id="education" className="education-section-container"> {/* Added id="education" */}
       <h2 className="section-title">
-        <span className="highlight">My</span> Education
+        <span className="highlight"></span> Education
       </h2>
       <button className="view-all-button">
         <span>View All Education</span> ➔

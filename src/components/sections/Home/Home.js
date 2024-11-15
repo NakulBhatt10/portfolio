@@ -21,7 +21,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="home-section">
+    <section id="home" className="home-section"> {/* Added id="home" */}
       <div className="home-content">
         <p className="home-greeting"><h1>Hello</h1></p>
         <h1 className="home-title">
@@ -33,7 +33,7 @@ const Home = () => {
         <img src={myPhoto} alt="Nakul" /> {/* Using your photo */}
       </div>
       <div className="hire-me">
-        <a href="#contact">CONTACT ME</a>
+        <a href="#contact">CONTACT ME</a> {/* Link to Contact section */}
       </div>
     </section>
   );

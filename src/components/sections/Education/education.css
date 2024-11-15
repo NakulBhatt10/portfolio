@@ -1,3 +1,10 @@
+/* index.css or main CSS file */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 .education-section-container {
   background-color: #3d1e6d;
   color: #ffffff;
