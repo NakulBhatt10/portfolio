@@ -1,11 +1,37 @@
-/* index.css or main CSS file */
+.certificate-card.image-only-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  /* Matches the width of other cards */
+  height: 420px;
+  /* Matches the height of other cards */
+  padding: 0;
+  background-color: #333;
+  /* Optional: match the background of other cards */
+  box-sizing: border-box;
+  border-radius: 15px;
+  overflow: hidden;
+  /* Ensures the image doesn't overflow */
+  flex-direction: column;
+  /* Align link below the image */
+}
+
+.certificate-image-only {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the image fills the card fully */
+}
+
+/* Additional CSS */
 html {
   scroll-behavior: smooth;
 }
 
 .certificate-section-container {
-  background-color: #3d1e6d;
-  color: #ffffff;
+  background-color: #000000;
+  color: #e3c72b;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -22,7 +48,7 @@ html {
 }
 
 .section-title .highlight {
-  color: #a0da5e;
+  color: #ffffff;
 }
 
 .certificate-cards {
@@ -36,7 +62,7 @@ html {
 }
 
 .certificate-card {
-  background-color: #4b2b8f;
+  background-color: rgb(51 53 62);
   width: 300px;
   /* Fixed width for consistency */
   height: 420px;
@@ -75,14 +101,14 @@ html {
 
 .certificate-description {
   font-size: 1rem;
-  color: #e0e0e0;
+  color: #ffffff;
   margin-bottom: 20px;
   flex-grow: 1;
   /* Allow description to take up available space */
 }
 
 .learn-more {
-  color: #a0da5e;
+  color: #e3c72b;
   font-size: 0.9rem;
   text-decoration: none;
   margin-top: auto;

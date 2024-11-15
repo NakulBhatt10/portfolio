@@ -6,8 +6,8 @@ html {
 
 
 .education-section-container {
-  background-color: #3d1e6d;
-  color: #ffffff;
+  background-color: #000000;
+  color: #e3c72b;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -22,12 +22,12 @@ html {
 }
 
 .section-title .highlight {
-  color: #a0da5e;
+  color: #e3c72b;
 }
 
 .view-all-button {
-  background-color: #a0da5e;
-  color: #3d1e6d;
+  background-color: #e3c72b;
+  color: #000000;
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -42,7 +42,7 @@ html {
 .content-wrapper {
   display: flex;
   gap: 20px;
-  background-color: #4b2b8f;
+  background-color: rgb(51 53 62);
   padding: 30px;
   border-radius: 20px;
   max-width: 1200px;
@@ -75,8 +75,8 @@ html {
 }
 
 .pill {
-  background-color: #a0da5e;
-  color: #3d1e6d;
+  background-color: #000000;
+  color: #e3c72b;
   padding: 5px 10px;
   border-radius: 15px;
   font-size: 0.85rem;
@@ -121,8 +121,8 @@ html {
 
 
 .view-details-button {
-  background-color: #000831;
-  color: #02052d;
+  background-color: #000000;
+  color: #e3c72b;
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 0.9rem;

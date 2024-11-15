@@ -24,10 +24,9 @@ const Education = () => {
             <span className="pill">JavaScript</span>
             <span className="pill">HTML/CSS</span>
           </div>
-          <h3 className="education-title">University of Mumbai</h3>
+          <h3 className="education-title">K.J.SOMAIYA INSTITUTE OF TECHNOLOGY</h3>
           <p className="education-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+            Over this 4 yearsy studies at KJSIT equipped me with a diverse skill set, covering full-stack development, data structures and algorithms, cloud services, and DevOps practices , along with practical exposure to machine learning and data analysis          </p>
           <ul className="subjects-list">
             <li>Advanced Algorithms</li>
             <li>Data Structures</li>
