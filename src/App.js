@@ -4,7 +4,7 @@ import './App.css';
 
 import Home from './components/sections/Home/Home';
 import Ribbon from './components/sections/Ribbon/Ribbon';
-import Education from './components/sections/Education/Education'
+import EducationSection from './components/sections/Education/EducationSection'
 import Certificate from './components/sections/Certificate/Certificate';
 import About from './components/sections/About/About';
 import Skills from './components/sections/Skill/Skills';
@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <Home />
       <Ribbon />
-      <Education />
+      <EducationSection />
       <Certificate />
       <Skills />
       <About />

@@ -3,9 +3,9 @@ import './education.css';
 import beImage from './be.png'; // Image for University
 import mithibai from './mithibai.jpg'; // Image for College
 
-const Education = () => {
+const EducationSection = () => {
   return (
-    <div id="education" className="education-section-container"> {/* Added id="education" */}
+    <div id="education1" className="education-section-container"> {/* Added id="education" */}
       <h2 className="section-title">
         <span className="highlight"></span> Education
       </h2>
@@ -67,4 +67,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default EducationSection;
