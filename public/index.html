@@ -3,31 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon-32x32.png" />
-    <!-- Updated with your custom favicon -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Your custom website description here" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon-32x32.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Nakul Bhatt</title>
-    <!-- Custom title -->
   </head>
   <body>
-    <!-- Botpress Chatbot Scripts -->
     <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
     <script src="https://mediafiles.botpress.cloud/960a6cac-1f27-4f6a-b6f3-eca632207dad/webchat/v2.1/config.js"></script>
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div class="contact-button-container">
+      <a href="#contact" class="contact-button" onclick="scatterIcons()"
+        >CONNECT WITH ME</a
+      >
+      <div class="icons-container">
+        <a href="https://linkedin.com" target="_blank">
+          <img
+            src="public/LinkedIn_logo_initials.png"
+            class="app-icon"
+            alt="LinkedIn"
+          />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img
+            src="public/instagram-logo.png"
+            class="app-icon"
+            alt="Instagram"
+          />
+        </a>
+        <a href="https://github.com" target="_blank">
+          <img src="public/github.png" class="app-icon" alt="GitHub" />
+        </a>
+        <a href="https://leetcode.com" target="_blank">
+          <img src="public/leetcode.png" class="app-icon" alt="LeetCode" />
+        </a>
+        <a href="mailto:your-email@example.com" target="_blank">
+          <img src="public/gmail.png" class="app-icon" alt="Email" />
+        </a>
+      </div>
+    </div>
   </body>
 </html>
