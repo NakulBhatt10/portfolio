@@ -3,6 +3,13 @@ import React, { useEffect } from 'react';
 import Typed from 'typed.js';
 import './home.css';
 import myPhoto from './myPhoto.png';
+import insta from './instagram-logo.png';
+import linkedin from './LinkedIn_logo_initials.png'
+import gmail from './gmail.png'
+import github from './github.png'
+import leetcode from './leetcode.png'
+
+
 
 function scatterIcons() {
   const iconsContainer = document.querySelector('.icons-container');
@@ -69,19 +76,19 @@ const Home = () => {
         </a>
         <div className="icons-container">
           <a href="https://linkedin.com" target="_blank">
-            <img src="src\components\sections\Home\LinkedIn_logo_initials.png" className="app-icon" alt="LinkedIn" />
+            <img src={linkedin} className="app-icon" alt="LinkedIn" />
           </a>
           <a href="https://instagram.com" target="_blank">
-            <img src="public/instagram-logo.png" className="app-icon" alt="Instagram" />
+            <img src={insta} className="app-icon" alt="Instagram" />
           </a>
           <a href="https://github.com" target="_blank">
-            <img src="public/github.png" className="app-icon" alt="GitHub" />
+            <img src={github} className="app-icon" alt="GitHub" />
           </a>
           <a href="https://leetcode.com" target="_blank">
-            <img src="public/leetcode.png" className="app-icon" alt="LeetCode" />
+            <img src={leetcode} className="app-icon" alt="LeetCode" />
           </a>
           <a href="mailto:your-email@example.com" target="_blank">
-            <img src="public/gmail.png" className="app-icon" alt="Email" />
+            <img src={gmail} className="app-icon" alt="Email" />
           </a>
         </div>
       </div>
