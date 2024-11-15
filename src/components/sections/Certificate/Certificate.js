@@ -1,7 +1,6 @@
 import React from 'react';
 import './certificate.css';
 import newCertificate from './React.png'; // Adjusted path to use forward slashes
-import uiUxIcon from './one.png'; // Placeholder for UI/UX icon
 import appDesignIcon from './one.png'; // Placeholder for App Design icon
 import webDesignIcon from './two.png'; // Placeholder for Web Design icon
 import badgeImage from './badge.png'; // Path for the image-only card
