@@ -39,11 +39,19 @@ function Navbar() {
                 <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
                     <ul className="nav-list">
                         <a href="#home" onClick={handleScroll} className="nav-link">Home</a>
-                        <a href="#educationsection" onClick={handleScroll} className="nav-link">Education</a>
+                        <a href="#education1" onClick={handleScroll} className="nav-link">Education</a>
                         <a href="#certificate" onClick={handleScroll} className="nav-link">Achievements</a>
                         <a href="#skills" onClick={handleScroll} className="nav-link">Skills</a>
                         <a href="#about" onClick={handleScroll} className="nav-link">About</a>
-                        <a href="src\Navbar\nakul_resume.pdf" target="_blank" className="resume-btn">Resume</a>
+                        {/* Resume Button */}
+                        <a
+                            href="/nakul_resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="resume-btn"
+                        >
+                            Resume
+                        </a>
                     </ul>
                 </div>
             </div>

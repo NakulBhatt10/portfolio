@@ -5,7 +5,7 @@ import mithibai from './mithibai.jpg'; // Image for College
 
 const EducationSection = () => {
   return (
-    <div id="education1" className="education-section-container"> {/* Added id="education" */}
+    <div id="education1" className="education-section-container">
       <h2 className="section-title">
         <span className="highlight"></span> Education
       </h2>
@@ -23,14 +23,17 @@ const EducationSection = () => {
           </div>
           <h3 className="education-title">K.J.SOMAIYA INSTITUTE OF TECHNOLOGY</h3>
           <p className="education-description">
-            Over this 4 yearsy studies at KJSIT equipped me with a diverse skill set, covering full-stack development, data structures and algorithms, cloud services, and DevOps practices , along with practical exposure to machine learning and data analysis          </p>
+            Over this 4 yearsy studies at KJSIT equipped me with a diverse skill set, covering full-stack development, data structures and algorithms, cloud services, and DevOps practices , along with practical exposure to machine learning and data analysis.
+          </p>
           <ul className="subjects-list">
             <li>Advanced Algorithms</li>
             <li>Data Structures</li>
             <li>Machine Learning</li>
           </ul>
           <button className="view-details-button">
-            <span>View Details</span> ➔
+            <a href="#education1" className="scroll-link">
+              <span>View Details</span> ➔
+            </a>
           </button>
         </div>
       </div>
@@ -56,8 +59,11 @@ const EducationSection = () => {
             <li>Mathematics</li>
           </ul>
           <button className="view-details-button">
-            <span>View Details</span> ➔
+            <a href="#education1" className="scroll-link">
+              <span>View Details</span> ➔
+            </a>
           </button>
+
         </div>
       </div>
     </div>
