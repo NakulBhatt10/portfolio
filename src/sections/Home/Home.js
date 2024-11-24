@@ -1,42 +1,31 @@
-// components/Home.js
 import React, { useEffect } from 'react';
 import Typed from 'typed.js';
 import './home.css';
 import myPhoto from './myPhoto.png';
-import insta from './instagram-logo.png';
-import linkedin from './LinkedIn_logo_initials.png'
-import gmail from './gmail.png'
-import github from './github.png'
-import leetcode from './leetcode.png'
-
-
+import insta from './download.jpg';
+import linkedin from './LinkedIn_logo_initials.png';
+import gmail from './gmail.png';
+import github from './github.png';
+import leetcode from './leetcode.png';
 
 function scatterIcons() {
   const iconsContainer = document.querySelector('.icons-container');
   const icons = document.querySelectorAll('.app-icon');
 
-  // Make icons visible
   iconsContainer.style.display = 'block';
   iconsContainer.style.opacity = 1;
 
   icons.forEach((icon, index) => {
-    // Generate random angles and increased distances for a wider scatter effect
     const angle = Math.random() * 2 * Math.PI;
-    const distance = Math.random() * 300 + 100; // Increased distance range
-
-    // Calculate new position for scatter effect and scale it up
+    const distance = Math.random() * 300 + 100;
     const x = Math.cos(angle) * distance;
     const y = Math.sin(angle) * distance;
 
-    // Apply the styles for the animation once with scale
-    icon.style.transform = `translate(${x}px, ${y}px) scale(1.5)`; // Scale up to 1.5x size
+    icon.style.transform = `translate(${x}px, ${y}px) scale(1.2)`;
     icon.style.opacity = 1;
-
-    // Add a delay for a staggered effect
     icon.style.transitionDelay = `${index * 0.1}s`;
   });
 
-  // Remove the onclick event to prevent re-triggering
   document.querySelector('.contact-button').onclick = null;
 }
 
@@ -59,29 +48,28 @@ const Home = () => {
   return (
     <section id="home" className="home-section">
       <div className="home-content">
-        <p className="home-greeting">
-          <h1>Hello</h1>
-        </p>
-        <h1 className="home-title">
-          I’m <span className="highlight">Nakul</span> <br />
-          <span id="typed-text"></span>Developer
-        </h1>
+        <div className="home-text-wrapper">
+          <h1 className="home-title">
+            I’m <span className="highlight">Nakul</span> <br />
+            <span id="typed-text" className="typed-text"></span> Developer
+          </h1>
+        </div>
       </div>
       <div className="home-image">
         <img src={myPhoto} alt="Nakul" />
       </div>
       <div className="contact-button-container">
         <a href="#contact" className="contact-button" onClick={scatterIcons}>
-          CONNECT WITH ME
+          Connect with me
         </a>
         <div className="icons-container">
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer noopener">
+          <a href="https://linkedin.com.in/nakul-bhatt-157aba24a" target="_blank" rel="noreferrer noopener">
             <img src={linkedin} className="app-icon" alt="LinkedIn" />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer noopener">
+          <a href="https://instagram.com/nakulbhatt106" target="_blank" rel="noreferrer noopener">
             <img src={insta} className="app-icon" alt="Instagram" />
           </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer noopener">
+          <a href="https://github.com/NakulBhatt10" target="_blank" rel="noreferrer noopener">
             <img src={github} className="app-icon" alt="GitHub" />
           </a>
           <a href="https://leetcode.com" target="_blank" rel="noreferrer noopener">

@@ -9,9 +9,6 @@ const EducationSection = () => {
       <h2 className="section-title">
         <span className="highlight"></span> Education
       </h2>
-      <button className="view-all-button">
-        <span>View All Education</span> ➔
-      </button>
 
       {/* University Section */}
       <div className="content-wrapper">

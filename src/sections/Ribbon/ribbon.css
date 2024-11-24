@@ -1,0 +1,64 @@
+/* Ribbon container */
+.ribbon-container {
+  background: linear-gradient(90deg, #1a1a1a, #0d0d0d); /* Ribbon gradient */
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Prevent overflow */
+  position: relative;
+  border: 2px solid #444; /* Optional border for ribbon effect */
+  border-radius: 8px; /* Rounded edges for the ribbon */
+  padding: 10px 0;
+}
+
+/* Scrolling container */
+.ribbon-scroll {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Space between items */
+  animation: scroll 20s linear infinite; /* Continuous scrolling animation */
+  white-space: nowrap; /* Prevent line wrapping */
+}
+
+/* Individual ribbon items */
+.ribbon-item {
+  flex-shrink: 0; /* Prevent items from shrinking */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1); /* Subtle background for items */
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* Ribbon logos */
+.ribbon-logo {
+  height: 80px; /* Consistent logo size */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+}
+
+/* Continuous scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+/* Duplicate ribbon for seamless scrolling */
+.ribbon-scroll {
+  animation: scroll 15s linear infinite;
+}
+
+.ribbon-scroll::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%; /* Start just outside the visible area */
+  height: 100%;
+  background: transparent; /* Blend with the ribbon's background */
+}

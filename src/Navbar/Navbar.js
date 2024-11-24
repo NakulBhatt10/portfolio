@@ -1,7 +1,8 @@
-import React from 'react';
-import './../styles/navbar.css';
+import React, { useState } from 'react';
+import './navbar.css';
 
 function Navbar() {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const handleScroll = (e) => {
         e.preventDefault();
@@ -12,29 +13,37 @@ function Navbar() {
             behavior: 'smooth',
         });
 
-        // Update the class name of the clicked link
         const links = document.querySelectorAll('.nav-link');
         links.forEach((link) => {
             link.classList.remove('active');
         });
         e.currentTarget.classList.add('active');
+        setIsMobileMenuOpen(false); // Close menu on link click
+    };
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen((prev) => !prev);
     };
 
     return (
         <div className="navbar">
             <div className="container">
                 <div className="logo">
-
+                    <h1>NAKUL</h1>
                 </div>
-                <div className="nav-links">
+                <div className="menu-icon" onClick={toggleMobileMenu}>
+                    <div className="menu-bar"></div>
+                    <div className="menu-bar"></div>
+                    <div className="menu-bar"></div>
+                </div>
+                <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
                     <ul className="nav-list">
                         <a href="#home" onClick={handleScroll} className="nav-link">Home</a>
-
-                        <a href="#education" onClick={handleScroll} className="nav-link">Education</a>
-                        <a href="#certificate" onClick={handleScroll} className="nav-link">Acheivements</a>
+                        <a href="#educationsection" onClick={handleScroll} className="nav-link">Education</a>
+                        <a href="#certificate" onClick={handleScroll} className="nav-link">Achievements</a>
                         <a href="#skills" onClick={handleScroll} className="nav-link">Skills</a>
                         <a href="#about" onClick={handleScroll} className="nav-link">About</a>
-                        <a href="/assets/resume/julia_resume.pdf" target="_blank" className="resume-btn">Resume</a>
+                        <a href="src\Navbar\nakul_resume.pdf" target="_blank" className="resume-btn">Resume</a>
                     </ul>
                 </div>
             </div>

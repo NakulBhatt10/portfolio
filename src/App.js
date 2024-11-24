@@ -1,13 +1,15 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './Navbar/Navbar';
+
 import './App.css';
 
-import Home from './components/sections/Home/Home';
-import Ribbon from './components/sections/Ribbon/Ribbon';
-import EducationSection from './components/sections/Education/EducationSection'
-import Certificate from './components/sections/Certificate/Certificate';
-import About from './components/sections/About/About';
-import Skills from './components/sections/Skill/Skills';
+import Home from './sections/Home/Home';
+import Ribbon from './sections/Ribbon/Ribbon';
+import Education from './sections/Education/EducationSection'
+import Certificate from './sections/Certificate/Certificate';
+import About from './sections/About/About';
+import Skills from './sections/Skill/Skills';
+
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
       <Navbar />
       <Home />
       <Ribbon />
-      <EducationSection />
+      <Education />
       <Certificate />
       <Skills />
       <About />
