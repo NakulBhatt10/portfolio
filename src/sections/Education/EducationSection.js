@@ -21,20 +21,17 @@ const EducationSection = () => {
             <span className="pill">JavaScript</span>
             <span className="pill">HTML/CSS</span>
           </div>
+
           <h3 className="education-title">K.J.SOMAIYA INSTITUTE OF TECHNOLOGY</h3>
           <p className="education-description">
-            Over this 4 yearsy studies at KJSIT equipped me with a diverse skill set, covering full-stack development, data structures and algorithms, cloud services, and DevOps practices , along with practical exposure to machine learning and data analysis.
+            Over this 4 years studies at KJSIT I will be equipped with a diverse skill set, covering full-stack development, data structures and algorithms, cloud services, and DevOps practices , along with practical exposure to machine learning and data analysis.
           </p>
           <ul className="subjects-list">
             <li>Advanced Algorithms</li>
             <li>Data Structures</li>
             <li>Machine Learning</li>
           </ul>
-          <button className="view-details-button">
-            <a href="#education1" className="scroll-link">
-              <span>View Details</span> ➔
-            </a>
-          </button>
+
         </div>
       </div>
 
@@ -58,11 +55,7 @@ const EducationSection = () => {
             <li>Chemistry</li>
             <li>Mathematics</li>
           </ul>
-          <button className="view-details-button">
-            <a href="#education1" className="scroll-link">
-              <span>View Details</span> ➔
-            </a>
-          </button>
+
 
         </div>
       </div>

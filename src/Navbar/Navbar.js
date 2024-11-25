@@ -14,9 +14,7 @@ function Navbar() {
         });
 
         const links = document.querySelectorAll('.nav-link');
-        links.forEach((link) => {
-            link.classList.remove('active');
-        });
+        links.forEach((link) => link.classList.remove('active'));
         e.currentTarget.classList.add('active');
         setIsMobileMenuOpen(false); // Close menu on link click
     };
@@ -36,24 +34,26 @@ function Navbar() {
                     <div className="menu-bar"></div>
                     <div className="menu-bar"></div>
                 </div>
-                <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
+                <nav className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
                     <ul className="nav-list">
-                        <a href="#home" onClick={handleScroll} className="nav-link">Home</a>
-                        <a href="#education1" onClick={handleScroll} className="nav-link">Education</a>
-                        <a href="#certificate" onClick={handleScroll} className="nav-link">Achievements</a>
-                        <a href="#skills" onClick={handleScroll} className="nav-link">Skills</a>
-                        <a href="#about" onClick={handleScroll} className="nav-link">About</a>
-                        {/* Resume Button */}
-                        <a
-                            href="/nakul_resume.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="resume-btn"
-                        >
-                            Resume
-                        </a>
+                        <li>
+                            <a href="#home" onClick={handleScroll} className="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#education1" onClick={handleScroll} className="nav-link">Education</a>
+                        </li>
+                        <li>
+                            <a href="#certificate" onClick={handleScroll} className="nav-link">Achievements</a>
+                        </li>
+                        <li>
+                            <a href="#skills" onClick={handleScroll} className="nav-link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#about" onClick={handleScroll} className="nav-link">About</a>
+                        </li>
+
                     </ul>
-                </div>
+                </nav>
             </div>
         </div>
     );
